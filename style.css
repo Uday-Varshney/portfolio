@@ -1,0 +1,50 @@
+body {
+  background-color: rgb(220, 220, 220);
+}
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+.instagram:hover {
+  color: rgb(203, 0, 190);
+}
+
+.linkedin:hover {
+  color: #007bb5;
+  /* color: white; */
+}
+
+.github:hover {
+  color: #003157;
+}
+
+.mx-5 {
+  margin: 0px;
+}
+
+.myskills {
+  min-width: 40%;
+}
+
+.text-1 {
+  font-size: xxx-large;
+}
+.typing {
+  color: #ffea07;
+}
