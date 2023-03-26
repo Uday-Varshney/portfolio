@@ -36,10 +36,10 @@
       <div class="navbar-collapse mx-5" style="height: 10vh">
         <ul class="navbar-nav">
           <li><a class="nav-link active" href="">Home</a></li>
-          <li><a class="nav-link active" href="">About</a></li>
-          <li><a class="nav-link active" href="">Projects</a></li>
-          <li><a class="nav-link active" href="">Skills</a></li>
-          <li><a class="nav-link active" href="">Contact</a></li>
+          <li><a class="nav-link active" href="#about">About</a></li>
+          <li><a class="nav-link active" href="#projects">Projects</a></li>
+          <li><a class="nav-link active" href="#skills">Skills</a></li>
+          <li><a class="nav-link active" href="#contact">Contact</a></li>
           <li><a class="nav-link active" href="">Resume</a></li>
         </ul>
       </div>
@@ -122,72 +122,81 @@
       </div>
     </section>
     <!--  -->
-    <section class="mx-xl-5" id="Contact Me">
-      <h1 class="fw-bold text text-center">Contact us</h1>
-      <p class="text-center mx-auto mb-5">
-        Do you have any questions? Please do not hesitate to contact us
-        directly. Our team will come back to you within a matter of hours to
-        help you.
-      </p>
-      <div class="row">
-
-        <div class="col-md-9 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="name" name="name" class="form-control">
-                            <label for="name" class="">Your name</label>
+        <!-- contact section start -->
+        <section class="contact">
+          <div class="max-width">
+              <h2 class="title text-center">Contact me </h2>
+              <div class="contact-content">
+                  <div class="column left mt-5">
+                      <p>I am happy to answer any questions you have or provide you with an estimate. Just send me a message in the form with any questions you may have.  </p>
+                      <div class="icons" id="contactForm">
+                          <div class="row">
+                              <i class="fas fa-user"></i>
+                              <div class="info">
+                                  <div class="head">Name</div>
+                                  <div class="sub-title">Prashant Kumar Upadhyay</div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <i class="fas fa-map-marker-alt"></i>
+                              <div class="info">
+                                  <div class="head">Address</div>
+                                  <div class="sub-title">Mathura , Uttar Pradesh</div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <i class="fas fa-envelope"></i>
+                              <div class="info">
+                                  <div class="head">Email</div>
+                                  <div class="sub-title">uv.uday.varshney@gmail.com</div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <i class="fas fa-mobile"></i>
+                              <div class="info">
+                                  <div class="head">Mobile No.</div>
+                                  <div class="sub-title">7453931568</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="column right">
+                      <div class="text text-center">Message me</div>
+                      <form action="" id="contact">
+                          <div class="fields">
+                              <div class="field name">
+                                  <input type="text" id="Name" placeholder="Name" required>
+                              </div>
+                              <div class="field email">
+                                  <input type="email" id="Email" placeholder="Email" required>
+                              </div>
+                          </div>
+                          <div class="field">
+                              <input type="text" id="Subject" placeholder="Subject" required>
+                          </div>
+                          <div class="field">
+                            <input type="number" id="Phone" placeholder="Phone Number" required>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="email" name="email" class="form-control">
-                            <label for="email" class="">Your email</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="md-form mb-0">
-                            <input type="text" id="subject" name="subject" class="form-control">
-                            <label for="subject" class="">Subject</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                            <label for="message">Your message</label>
-                        </div>
-
-                    </div>
-                </div>
-            </form>
-            <div class="text-center text-md-left">
-                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-            </div>
-            <div class="status"></div>
-        </div>
-        <div class="col-md-3 text-center">
-            <ul class="list-unstyled mb-0">
-                <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                    <p>Aligarh, India</p>
-                </li>
-                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                    <p>uv.uday.varshney@gmail.com</p>
-                </li>
-            </ul>
-        </div>
+                          <div class="field textarea">
+                              <textarea cols="30" rows="10" id="Message" placeholder="Message.." required></textarea>
+                          </div>
+                          <div class="button-area">
+                              <button type="submit" id="submit" onclick="submitForm()">Send message</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
       </section>
+      <!--  -->
       <footer class="bg-light text-center text-lg-start">   
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
           
-          <p class="text-dark" href="">Created by <span class="">Uday Varshney</span> © 2023 All rights reserved.</p>
+          <p class="text-dark" href="">Created by Uday Varshney <span id="year"></span> ©  All rights reserved.</p>
         </div>
       </footer>
   </body>
   <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
   <script src="./main.js"></script>
 </html>
