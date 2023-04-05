@@ -15,48 +15,53 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
+    <div id="preloader"></div>
+    
     <!-- sticky social media bar -->
-    <div class="sticky-top icon-bar shadow-lg">
+    <div class="sticky icon-bar shadow-lg">
       <a href="https://www.instagram.com/uday__varshney/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
       <a href="https://www.linkedin.com/in/uday-varshney/" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
       <a href="https://github.com/Uday-Varshney" target="_blank" class="github"><i class="fa fa-github"></i></a>
     </div> 
 
 
-    <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
-      <div class="container-fluid">
+    <nav class="navbar menu header">
+      <div class="d-flex">
         <img
           src="./img/Uday.jpg"
           alt=""
-          class="navbar-brand"
+          class="navbar-brand mx-3"
           height="80"
           style="border-radius: 50%"
         />
+        <p class="mt-4 fw-bolder">Uday varshney</p>
       </div>
-      <div class="navbar-collapse mx-5" style="height: 10vh">
-        <ul class="navbar-nav">
-          <li><a class="nav-link active" href="">Home</a></li>
-          <li><a class="nav-link active" href="#about">About</a></li>
-          <li><a class="nav-link active" href="#projects">Projects</a></li>
-          <li><a class="nav-link active" href="#skills">Skills</a></li>
-          <li><a class="nav-link active" href="#contact">Contact</a></li>
-          <li><a class="nav-link active" href="./img/Uday resume new.pdf" target="_blank">Resume</a></li>
+      <div class="">
+        <ul class="menu-list">
+          <li class="menu-item "><a class="links" href="">Home</a></li>
+          <li class="menu-item " ><a class="links" href="#about">About</a></li>
+          <li class="menu-item"><a class="links" href="#projects">Projects</a></li>
+          <li class="menu-item"><a class="links" href="#skills">Skills</a></li>
+          <li class="menu-item"><a class="links" href="#contact">Contact</a></li>
+          <li class="menu-item"><a class="links" href="./img/Uday resume new.pdf" target="_blank">Resume</a></li>
         </ul>
       </div>
     </nav>
     <div
-      class="bg-image text-white d-flex justify-content-center align-items-center flex-column"
-      style="background-image: url('./img/baground.jpg'); height: 100vh;position: relative;background-size: cover;"
+      class="text-white d-flex justify-content-center align-items-center flex-column"
+      style="background-image: url('./img/grey-abstract-background-wallpaper-design-free-vector.jpg'); height: 100vh;position: relative;background-size: cover;"
     >
-      <h1 class="text-1">Hello I Am Uday Varshney</h1>
-      <h1>And I'm a <span class="typing"></span></h1>
+      <h1 class="text-1 text-black">Hello I Am Uday Varshney</h1>
+      <h1 class="text-black">And I'm a <span class="typing"></span></h1>
     </div>
 
     <!--  -->
-    <section id="about">
+    <!-- <hr id="about" style=""> -->
+    <section id="about" class="hidden">
       <h1 class="text-center">About me</h1>
+      <h5 class="text-center line">who am i</h5>
       <div class="d-flex justify-content-center align-items-center ">
-        <div class="m-5" ><img src="./img/Uday.jpg" alt="" style="width:40vw;border-radius: 20px;"></div>
+        <div class="m-5" ><img src="./img/Uday.jpg" alt="" style="width:35vw; height: 70vh;border-radius: 20px;"></div>
         <div class="m-5 text-left" style="width: 40vw;">
           <h3 class="mb-5">I'm Uday Varshney and I'm a <span class="typingg"></span></h3>
           <p>I am a hard working, honest individual. I am a good timekeeper, always willing to learn new skills. I am friendly, helpful and polite, have a good sense of humour. I am able to work independently in busy environments and also within a team setting. I am outgoing and tactful, and able to listen effectively when solving problems. I am an enthusiastic, self-motivated, reliable, responsible and hard working person. I am a mature team worker and adaptable to all challenging situations.</p>
@@ -65,23 +70,29 @@
     </section>
 
    <!--  -->
-    <section id="projects" class="my-5">
-      <h1 class="text-center mb-5">My Projects</h1>
+    <section id="projects" class="my-5 hidden">
+      <h1 class="text-center">My Projects</h1>
+      <h5 class="text-center line">what i have done</h5>
       <div class="d-flex">
-        <div class="text-center bg-dark text-white mx-5 shadow p-3 mb-5 rounded" >
+        <div class="text-center cstm-bg text-dark mx-5 shadow p-3 mb-5 rounded" >
           <h3 class="">Netflix_clone</h3>
           <p>Design the UI of the Netflix using Html, Css and JavaScript. And having the gmail authenctaion using firebase.</p>
+          <button class="ylw-btn"><a href="https://uday-varshney.github.io/netflix__clone/">View Deplyyment</a></button>
         </div>
-        <div class="text-center bg-dark text-white mx-5 shadow p-3 mb-5 rounded" ><h3>Food order Site</h3>
-          <p>Design the UI of the Netflix using Html, Css and JavaScript. And having the gmail authenctaion using firebase.</p></div>
-        <div class="text-center bg-dark text-white mx-5 shadow p-3 mb-5 rounded"><h3>Photographer Blogs</h3>
-          <p>Design the UI of the Netflix using Html, Css and JavaScript. And having the gmail authenctaion using firebase.</p></div>
+        <div class="text-center cstm-bg text-dark mx-5 shadow p-3 mb-5 rounded" ><h3>Food order Site</h3>
+          <p>Design the UI of the Netflix using Html, Css and JavaScript. And having the gmail authenctaion using firebase.</p>
+          <button class="ylw-btn"><a href="https://uday-varshney.github.io/webdevelopment-befoodie/">View Deplyyment</a></button></div>
+        <div class="text-center cstm-bg  mx-5 shadow p-3 mb-5 rounded"><h3>Photographer Blogs</h3>
+          <p>Design the UI of the Netflix using Html, Css and JavaScript. And having the gmail authenctaion using firebase.</p>
+          <button class="ylw-btn"><a href="https://uday-varshney.github.io/photographer-blog/">View Deplyyment</a></button>
+        </div>
         </div>
     </section>
 
     <!--  -->
-    <section id="skills">
+    <section id="skills" class="hidden">
       <h1 class="text-center">My Skills</h1>
+      <h5 class="line text-center">what i know</h5>
       <div class="d-flex">
         <div class="shadow p-5 mb-5 bg-white rounded m-5 myskills">
           <h4 class="text-center">My creative skills.
@@ -122,10 +133,11 @@
       </div>
     </section>
     <!--  -->
-        <!-- contact section start -->
-        <section class="contact">
+        <!-- contact section" start -->
+        <section id="contact" class="hidden contact">
           <div class="max-width">
-              <h2 class="title text-center">Contact me </h2>
+              <h1 class="title text-center">Contact me </h1>
+              <h5 class="line text-center">get in touch </h5>
               <div class="contact-content">
                   <div class="column left mt-5">
                       <p>I am happy to answer any questions you have or provide you with an estimate. Just send me a message in the form with any questions you may have.  </p>
